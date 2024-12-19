@@ -1,0 +1,73 @@
+.container {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.input-container {
+  padding-block: 1.5rem;
+  padding-inline: 2rem;
+  width: 40rem;
+  background-color: var(--dark-mode-text-light-mode-elements);
+  border-radius: var(--radius-2);
+  box-shadow: 0 0 5px #ddd;
+}
+
+.input-container.active {
+  box-shadow: 0 0 5px #555;
+  background-color: var(--dark-light-mode-input);
+}
+
+.input {
+  width: 85%;
+  font-size: var(--font-8);
+  background-color: var(--dark-mode-text-light-mode-elements);
+}
+
+.input.active {
+  background-color: var(--dark-light-mode-input);
+  color: var(--dark-mode-text-light-mode-elements);
+}
+
+.input.active::placeholder {
+  color: var(--dark-mode-text-light-mode-elements);
+}
+
+.input-container > i {
+  font-size: var(--font-8);
+  margin-inline-end: 2rem;
+}
+
+.select {
+  border: none;
+  outline: none;
+  padding: 1.6rem 2rem;
+  box-shadow: 0 0 5px #ddd;
+  border-radius: var(--radius-2);
+  background-color: var(--dark-mode-text-light-mode-elements);
+}
+
+.select.active {
+  box-shadow: 0 0 5px #555;
+  background-color: var(--dark-light-mode-input);
+  color: var(--dark-mode-text-light-mode-elements);
+}
+
+
+@media (max-width: 768px) {
+  .container {
+    flex-direction: column;
+    align-items: center;
+    gap: 3rem;
+  }
+
+  .input-container {
+    width: 90%;
+  }
+
+  .input {
+    width: 75%;
+  }
+}
+

@@ -1,0 +1,241 @@
+.loading {
+  width: 100%;
+  min-height: 90vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.loading.active {
+  background-color: var(--dark-mode-background);
+  color: var(--dark-mode-text-light-mode-elements);
+}
+
+.main {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  min-height: 90vh;
+  background-color: var(--very-light-gight-mode-background);
+  color: var(--very-dark-light-mode-text);
+  padding: var(--section-gap-desktop) var(--padding-inline-desktop);
+  overflow: hidden;
+}
+
+.main.active {
+  background-color: var(--dark-mode-background);
+  color: var(--dark-mode-text-light-mode-elements);
+}
+
+.back {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+  padding: 1rem 2rem;
+  border: 1px solid salmon;
+  width: fit-content;
+  border-radius: var(--radius-2);
+  font-size: var(--font-8);
+  margin-block-end: 5rem;
+  color: var(--very-dark-light-mode-text);
+  background-color: var(--dark-mode-text-light-mode-elements);
+  box-shadow: 0 0 2px saddlebrown;
+}
+
+.back i {
+  transform: rotate(0deg);
+}
+
+.back.active {
+  color: var(--dark-mode-text-light-mode-elements);
+  background-color: var(--dark-mode-elements);
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.card {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.image-container {
+  width: 50rem;
+  border-radius: var(--radius-2);
+  overflow: hidden;
+}
+
+.image-container img {
+  width: 100%;
+  height: 35rem;
+}
+
+.content {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  justify-content: center;
+}
+
+.heading {
+  font-size: var(--font-7);
+  margin-block-end: 1rem;
+}
+
+.information {
+  display: flex;
+  gap: 20rem;
+  font-size: var(--font-8);
+}
+
+.left-details,
+.right-details {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.border-countries {
+  display: flex;
+  font-size: var(--font-8);
+  margin-block-start: 3rem;
+}
+
+.border-countries-list {
+  width: 75%;
+  display: flex;
+  flex-wrap: wrap;
+  row-gap: 2rem;
+}
+
+.list-item {
+  all: unset;
+  padding: .25rem 1.5rem;
+  border: 1px solid sandybrown;
+  margin-inline: .75rem;
+  border-radius: var(--radius-2);
+  font-size: var(--font-8);
+  box-shadow: 0 0 2px saddlebrown;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--very-dark-light-mode-text);
+  background-color: var(--dark-mode-text-light-mode-elements);
+}
+
+.list-item.active {
+  color: var(--dark-mode-text-light-mode-elements);
+  background-color: var(--dark-mode-elements);
+}
+
+@media (max-width: 1200px) {
+  .content {
+    width: 40%;
+  }
+
+  .information {
+    gap: 5rem;
+  }
+}
+
+@media (max-width: 992px) {
+  .back {
+    margin-block-end: 2rem;
+  }
+
+  .image-container {
+    width: 40rem;
+  }
+
+  .image-container img {
+    width: 100%;
+    height: 30rem;
+  }
+
+  .content {
+    width: 30%;
+  }
+
+  .information {
+    flex-direction: column;
+    gap: 1rem;
+  }
+  
+  .border-countries {
+    flex-direction: column;
+    gap: 2rem;
+  }
+  
+  .border-countries-list {
+    width: 100%;
+  }
+}
+
+@media (max-width: 768px) {
+
+  .main {
+    padding: var(--section-gap-mobile) var(--padding-inline-mobile);
+  }
+
+  .back {
+    margin-block-start: 0;
+    margin-block-end: 3rem;
+  }
+
+  .card {
+    flex-direction: column;
+    gap: 5rem;
+  }
+
+  .image-container {
+    width: 45rem;
+    display: flex;
+    justify-content: center;
+  }
+
+  .image-container img {
+    height: 30rem;
+  }
+
+  .content {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .information {
+    width: 90%;
+    margin-top: 2rem;
+    font-size: 1.3rem;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}
+
+@media (max-width: 525px) {
+  .image-container {
+    width: 95%;
+  }
+
+  .image-container img {
+    height: 20rem;
+  }
+
+  .information {
+    margin-top: 0;
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  .border-countries {
+    width: 28rem;
+  }
+}

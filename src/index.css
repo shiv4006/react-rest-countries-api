@@ -1,0 +1,108 @@
+:root {
+  font-family: "Nunito Sans", serif, Helvetica, Arial, sans-serif;
+
+
+  /**
+   * Colors
+   */
+
+  --dark-mode-elements: hsl(209, 23%, 22%);
+  --dark-mode-background: hsl(207, 26%, 17%);
+  --very-dark-light-mode-text: hsl(200, 15%, 8%);
+  --dark-light-mode-input: hsl(0, 0%, 52%);
+  --very-light-gight-mode-background: hsl(0, 0%, 98%);
+  --dark-mode-text-light-mode-elements: hsl(0, 0%, 100%);
+
+  /**
+   * Font Size
+   */
+
+  --font-1: 7.2rem;
+  --font-2: 6.4rem;
+  --font-3: 4.8rem;
+  --font-4: 3.2rem;
+  --font-5: 2.4rem;
+  --font-6: 2.0rem;
+  --font-7: 1.6rem;
+  --font-8: 1.4rem;
+
+  /**
+   * Font Weight
+   */
+
+  --weight-bold: 800;
+  --weight-medium: 700;
+  --weight-semi-bold: 500;
+
+
+  /**
+   * Border Radius
+   */
+
+  --radius-50: 50%;
+  --radius-pill: 25px;
+  --radius-1: 10px;
+  --radius-2: 5px;
+
+  /**
+   * Transition
+   */
+
+  --transition-1: 500ms ease-in;
+  --transition-2: 1s ease-in-out;
+
+  /**
+   * Padding
+   */
+
+  --padding-inline-desktop: 8rem;
+  --padding-inline-mobile: 4rem;
+
+  /**
+   * Section Gap 
+   */
+
+  --section-gap-desktop: 4rem;
+  --section-gap-mobile: 2rem;
+
+}
+
+html {
+  font-size: 62.5%;
+}
+
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  background: none;
+}
+
+input {
+  border: none;
+  outline: none;
+}
+
+ul {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+body {
+  background-color: var(--very-light-gight-mode-background);
+  color: #111;
+}

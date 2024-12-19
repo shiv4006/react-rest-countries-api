@@ -1,0 +1,19 @@
+.container {
+  width: 100%;
+  min-height: 90vh;
+  padding: var(--section-gap-desktop) var(--padding-inline-desktop);
+  /* background-color: var(--very-light-gight-mode-background); */
+  color: var(--very-dark-light-mode-text);
+}
+
+.container.active {
+  background-color: var(--dark-mode-background);
+  color: var(----dark-mode-text-light-mode-elements);
+}
+
+@media (max-width: 768px) {
+  .container {
+    padding: var(--section-gap-desktop) var(--padding-inline-mobile);
+
+  }
+}

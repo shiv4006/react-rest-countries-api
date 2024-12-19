@@ -1,0 +1,12 @@
+.loading {
+  width: 100%;
+  min-height: 90vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.loading.active {
+  background-color: var(--dark-mode-background);
+  color: var(--dark-mode-text-light-mode-elements);
+}
